@@ -32,6 +32,7 @@ module.exports = {
 		})
 	].filter(Boolean),
 	devServer: {
+		hot: true,
 		devMiddleware: {
 			writeToDisk: true
 		}
