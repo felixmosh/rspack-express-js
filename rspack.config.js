@@ -17,8 +17,11 @@ module.exports = {
 		server: ["webpack/hot/poll?100", "./src/index.ts"]
 	},
 	output: {
-		path: './dist'
+		clean: true,
+		hotUpdateChunkFilename: 'hot/[name].[hash].hot-update.js',
+		hotUpdateMainFilename: 'hot/[fullhash].hot-update.json',
 	},
+	devtool: !process.env.BUILD ? 'inline-cheap-module-source-map' : false,
 	optimization: {
 		minimize: false
 	},
