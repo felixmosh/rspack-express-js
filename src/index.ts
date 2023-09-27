@@ -29,7 +29,7 @@ async function main() {
     .use(appWithHMR)
     .listen(3000, '127.0.0.1', () => {
       // eslint-disable-next-line no-console
-      console.log(`\nServer listening on port 300`);
+      console.log(`\nServer listening on port 3000`);
     });
 }
 
