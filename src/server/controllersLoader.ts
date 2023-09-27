@@ -29,7 +29,7 @@ function registerControllersByPath(router: Router) {
 }
 
 function unSupportedAction(_req: Request, res: Response) {
-  res.status(404).send('common:ERROR.UNSUPPORTED_ACTION');
+  res.status(404).json({error:'ERROR.UNSUPPORTED_ACTION'});
 }
 
 export function getControllers() {

@@ -26,7 +26,9 @@ module.exports = {
 		minimize: false
 	},
 	externalsType: "commonjs",
-	externals: [nodeExternals()],
+	externals: [nodeExternals({
+		allowlist: [/webpack/]
+	})],
 	plugins: [
 		!process.env.BUILD &&
 		new RunScriptWebpackPlugin({

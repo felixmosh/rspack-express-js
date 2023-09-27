@@ -1,5 +1,5 @@
 import express from 'express';
-import { createAppRouter } from './server/server.ts';
+import { createAppRouter } from './server/server';
 
 async function main() {
   let app = createAppRouter();
