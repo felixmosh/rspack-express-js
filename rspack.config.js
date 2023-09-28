@@ -37,7 +37,8 @@ module.exports = {
       autoRestart: false,
       keyboard: true,
       restartable: true
-    }, new ForkTsCheckerWebpackPlugin({ async: !process.env.BUILD }))
+    }),
+    new ForkTsCheckerWebpackPlugin({ async: !process.env.BUILD }),
   ].filter(Boolean),
   devServer: {
     hot: true,
